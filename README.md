@@ -3,14 +3,14 @@
 
 ---
 
-## Índdex
+## Índex
 1. [Punts claus](#claus)
 2. [Pràctica amb un exemple](#exemple)
 3. [Xifrar missatge](#xifrar)
 4. [Desxifrar missatge](#desxifrar)
 5. [Visualitzar el missatge](#visualitzar)
 6. [Repositori](#repositori)
-7. [Crèditos](#credits)
+7. [Crèdits](#credits)
 8. [Llicencia](#llicencia).
 
 ---
@@ -85,7 +85,7 @@ Per veure el missatge desxifrat, només cal obrir el fitxer `Desxifrat.txt`. Com
 
 ---
 
-### 📁 Repositori
+### 📁 Repositori <a name="repositori"></a>
 
 ├── Arxius/
     ├── const.h
