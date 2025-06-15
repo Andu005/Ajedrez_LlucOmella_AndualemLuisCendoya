@@ -1,10 +1,10 @@
 #include "logica.h"
-#include "const.h"
+#include "const.h" //capcaleras
 #include <iostream>
 #include <fstream>
-#include <cctype>
+#include <cctype> //llibreries per gestionar fitxers i caracters
 
-void loadRotors() {
+void loadRotors() { //funcio per carregar un rotor
     auto loadRotor = [](const std::string& filename, Rotor& rotor) {
         std::ifstream file(filename);
         if (file.is_open()) {
@@ -18,11 +18,12 @@ void loadRotors() {
         }
         };
 
-    loadRotor(ROTOR1_FILE, rotor1);
+    loadRotor(ROTOR1_FILE, rotor1);  // Carreguem rotor 1,2 i 3
     loadRotor(ROTOR2_FILE, rotor2);
     loadRotor(ROTOR3_FILE, rotor3);
 }
 
+//validacio del rotor: carcters, rpeticio de lletras...
 bool validateWiring(const std::string& wiring) {
     if (wiring.length() != 26) return false;
 
@@ -37,6 +38,7 @@ bool validateWiring(const std::string& wiring) {
     return true;
 }
 
+// rotar (gira) els rotors
 void rotateRotors() {
     rotor1.position = (rotor1.position + 1) % 26;
 
