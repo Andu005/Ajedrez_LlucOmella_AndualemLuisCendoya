@@ -1,12 +1,13 @@
 #include "logica.h"
 #include "const.h"
 #include <iostream>
-#include <fstream>
+#include <fstream> //funcions per gestionar arxius i strings
 #include <sstream>
-#include <algorithm>
+#include <algorithm> //funcions per algoritmes i limits numerics
 #include <cctype>
 #include <limits>
 
+// Procesem una lletra
 char processLetter(char letter, bool reverse) {
     if (!isalpha(letter)) return letter;
     letter = toupper(letter);
@@ -38,6 +39,7 @@ char processLetter(char letter, bool reverse) {
     return letter;
 }
 
+// Obtenim el missatge de l'usuari
 std::string getMessageFromUser() {
     std::cout << "Introduce el mensaje: ";
     std::string message;
@@ -45,6 +47,7 @@ std::string getMessageFromUser() {
     return message;
 }
 
+// Xifrat/desxifrat d'arxius
 void encryptDecryptFile(bool encrypt) {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
@@ -90,6 +93,7 @@ void encryptDecryptFile(bool encrypt) {
         << "Resultado en " << outputFilename << std::endl;
 }
 
+// Editar/modificar la configuraciÃ³ dels rotors
 void editRotor() {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
@@ -103,13 +107,13 @@ void editRotor() {
     Rotor* rotor = (choice == 1) ? &rotor1 : (choice == 2) ? &rotor2 : &rotor3;
     std::string filename = "Rotor" + std::to_string(choice) + ".txt";
 
-    std::cout << "Nuevo cableado (26 letras únicas): ";
+    std::cout << "Nuevo cableado (26 letras Ãºnicas): ";
     std::string newWiring;
     getline(std::cin, newWiring);
 
     if (!validateWiring(newWiring)) return;
 
-    std::cout << "Posición del notch (A-Z): ";
+    std::cout << "PosiciÃ³n del notch (A-Z): ";
     char newNotch;
     std::cin >> newNotch;
     newNotch = toupper(newNotch);
@@ -124,6 +128,7 @@ void editRotor() {
     }
 }
 
+//impresio del menu per escollir
 void showMenu() {
     int choice;
     do {
@@ -146,7 +151,7 @@ void showMenu() {
         case 2: encryptDecryptFile(false); break;
         case 3: editRotor(); break;
         case 4: std::cout << "Saliendo...\n"; break;
-        default: std::cout << "Opción no válida\n";
+        default: std::cout << "OpciÃ³n no vÃ¡lida\n";
         }
     } while (choice != 4);
 }
@@ -161,6 +166,7 @@ std::string cleanMessage(const std::string& message) {
     return cleaned;
 }
 
+//funcio per separar de 5 en 5 (lletres)
 void groupText(std::string& text) {
     std::string grouped;
     for (size_t i = 0; i < text.size(); ++i) {
