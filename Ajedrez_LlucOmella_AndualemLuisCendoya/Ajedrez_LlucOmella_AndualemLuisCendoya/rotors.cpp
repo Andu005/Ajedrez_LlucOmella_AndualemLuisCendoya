@@ -4,21 +4,21 @@
 #include <fstream>
 #include <cctype> //llibreries per gestionar fitxers i caracters
 
-void loadRotors() { //funcio per carregar un rotor
-    auto loadRotor = [](const std::string& filename, Rotor& rotor) {
-        std::ifstream file(filename);
-        if (file.is_open()) {
-            getline(file, rotor.wiring);
-            std::string notchLine;
-            if (getline(file, notchLine) && !notchLine.empty()) {
-                rotor.notch = toupper(notchLine[0]);
-            }
-            rotor.position = 0;
-            file.close();
+void loadRotor(const std::string& filename, Rotor& rotor) {
+    std::ifstream file(filename);
+    if (file.is_open()) {
+        std::getline(file, rotor.wiring);
+        std::string notchLine;
+        if (std::getline(file, notchLine) && !notchLine.empty()) {
+            rotor.notch = toupper(notchLine[0]);
         }
-        };
+        rotor.position = 0;
+        file.close();
+    }
+}
 
-    loadRotor(ROTOR1_FILE, rotor1);  // Carreguem rotor 1,2 i 3
+void loadRotors() {
+    loadRotor(ROTOR1_FILE, rotor1);
     loadRotor(ROTOR2_FILE, rotor2);
     loadRotor(ROTOR3_FILE, rotor3);
 }
