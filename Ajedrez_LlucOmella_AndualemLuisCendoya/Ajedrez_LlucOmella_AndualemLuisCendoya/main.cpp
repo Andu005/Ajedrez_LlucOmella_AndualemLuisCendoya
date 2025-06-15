@@ -1,8 +1,8 @@
 #include "logica.h"
 #include <iostream>
 
-int main() {
+int main() { //funcio principal del projecte
     loadRotors();
-    showMenu();
+    showMenu(); //main crida la resta de funcions per executar l'encriptador
     return 0;
 }
