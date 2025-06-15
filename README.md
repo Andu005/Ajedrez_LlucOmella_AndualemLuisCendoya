@@ -124,8 +124,7 @@ Els arxius dels rotors són els arxius que contenen una combinació aleatoria de
   <img src="/rotor.png" alt="Arxiu rotor" width="500"/>
 </p>
 
-<h4 style="text-align: center">Rotors reals de la màquina enigma</h4>
-
+#### <center>Rotors reals de la màquina enigma</center>
 <p align="center">
   <img src="/rotorsreals.png" alt="Rotors reals" width="250"/>
 </p>
