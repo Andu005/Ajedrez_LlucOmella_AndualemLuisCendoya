@@ -120,11 +120,20 @@ Per veure el missatge desxifrat, només cal obrir el fitxer `Desxifrat.txt`. Com
 Els arxius dels rotors són els arxius que contenen una combinació aleatoria de les vint-i-sis lletres de l'abecedari. El seu ordre es pot modificar a conveniència. Aquests rotors simulen els de la màquina enigma original. 
 ```
 
+<p align="center">
+  <img src="/rotor.png" alt="" width="500"/>
+</p>
+
+
 ### Xifrat.txt
 
 ```
 Es l'arxiu que, tal i com diu el seu nom conté el missatge *xifrat*: es a dir no podrem extreuren cap informació
 ```
+
+<p align="center">
+  <img src="/xifrat.png" alt="" width="500"/>
+</p>
 
 ### Desxifrat.txt
 
@@ -138,6 +147,11 @@ En aquest arxiu, i per tal de simular la màquina exnigma original, el missatge 
 - Les lletres o caracters es separen en conjunts de 5.
 
 ```
+
+<p align="center">
+  <img src="/desxifrat.png" alt="" width="500"/>
+</p>
+
 ---
 
 ## 📚 Crèdits <a name="credits"></a>
