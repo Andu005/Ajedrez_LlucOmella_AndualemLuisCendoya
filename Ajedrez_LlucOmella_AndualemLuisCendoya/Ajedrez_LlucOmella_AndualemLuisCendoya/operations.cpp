@@ -49,7 +49,7 @@ std::string getMessageFromUser() {
 
 // Xifrat/desxifrat d'arxius
 void encryptDecryptFile(bool encrypt) {
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::cin.ignore(1000, '\n');
 
     std::cout << "Posiciones iniciales (ej. A B C): ";
     std::string windowSettings;
@@ -63,15 +63,17 @@ void encryptDecryptFile(bool encrypt) {
         rotor3.position = toupper(c3) - 'A';
     }
 
-    std::string message = encrypt ? getMessageFromUser() : [&]() {
+    std::string message;
+    
+    if (encrypt) {
+        message = getMessageFromUser();
+    } else {
         std::ifstream inputFile(ENCRYPTED_FILE);
-        std::string content;
         if (inputFile) {
-            content.assign((std::istreambuf_iterator<char>(inputFile)),
-                std::istreambuf_iterator<char>());
+            message.assign((std::istreambuf_iterator<char>(inputFile)),
+                           std::istreambuf_iterator<char>());
         }
-        return content;
-        }();
+    }
 
     std::string cleaned = cleanMessage(message);
     std::string result;
@@ -83,14 +85,27 @@ void encryptDecryptFile(bool encrypt) {
 
     groupText(result);
 
-    std::string outputFilename = encrypt ? ENCRYPTED_FILE : DECRYPTED_FILE;
-    std::ofstream outputFile(outputFilename);
-    if (outputFile) {
-        outputFile << result;
-    }
+std::string outputFilename;
 
-    std::cout << (encrypt ? "Cifrado" : "Descifrado") << " completado. "
-        << "Resultado en " << outputFilename << std::endl;
+if (encrypt) {
+    outputFilename = ENCRYPTED_FILE;
+} else {
+    outputFilename = DECRYPTED_FILE;
+}
+
+std::ofstream outputFile(outputFilename);
+if (outputFile) {
+    outputFile << result;
+    if (encrypt) {
+        std::cout << "Cifrado completado. ";
+    } else {
+        std::cout << "Descifrado completado. ";
+    }
+    std::cout << "Resultado en " << outputFilename << std::endl;
+} else {
+    std::cerr << "No se pudo escribir en el archivo de salida." << std::endl;
+}
+
 }
 
 // Editar/modificar la configuració dels rotors
@@ -104,7 +119,16 @@ void editRotor() {
 
     if (choice < 1 || choice > 3) return;
 
-    Rotor* rotor = (choice == 1) ? &rotor1 : (choice == 2) ? &rotor2 : &rotor3;
+    Rotor* rotor;
+
+    if (choice == 1) {
+        rotor = &rotor1;
+    } else if (choice == 2) {
+        rotor = &rotor2;
+    } else {
+        rotor = &rotor3;
+    }
+    
     std::string filename = "Rotor" + std::to_string(choice) + ".txt";
 
     std::cout << "Nuevo cableado (26 letras únicas): ";
