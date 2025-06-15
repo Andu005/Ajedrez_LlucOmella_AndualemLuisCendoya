@@ -3,7 +3,7 @@
 
 ---
 
-## Índice
+## Índdex
 1. [Punts claus](#claus)
 2. [Pràctica amb un exemple](#exemple)
 3. [Xifrar missatge](#xifrar)
@@ -17,13 +17,14 @@
 
 ## 🔑 Punts claus del codi <a name="claus"></a>
 
-El codi és molt simple. Per una banda tenim els **rotors**, que consisteixen en tres arxius `.txt` amb l’abecedari en ordres diferents. La idea és que no segueixin un ordre clàssic per dificultar el procés d’encriptació a qui no disposi de la clau (`notch`).
+El codi presenta una simulació de la màquina enigma. Per una banda tenim els **rotors**, que consisteixen en tres arxius `.txt` amb l’abecedari en ordres diferents. La idea és que no segueixin un ordre clàssic per dificultar el procés d’encriptació a qui no disposi de la clau (`notch`).
 
 Parlant de **notch**, és la **clau inicial**, composta per 3 lletres. El programa utilitza aquesta clau per establir la posició inicial dels rotors.
 
 <p align="center">
   <img src="/ilustracioexplicativa.png" alt="Il·lustració explicativa" width="500"/>
 </p>
+[▲ Tornar a l'índex](#índex).
 
 ---
 
@@ -36,6 +37,7 @@ El menú del programa és aquest i ofereix diverses opcions:
 <p align="center">
   <img src="/menucodi.png" alt="Menú del programa" width="500"/>
 </p>
+[▲ Tornar a l'índex](#índex).
 
 ---
 
@@ -57,6 +59,7 @@ El programa anirà saltant lletres fins a trobar la indicada. Quan els tres roto
 <p align="center">
   <img src="/rotorilustracio.png" alt="Exemple de rotor" width="400"/>
 </p>
+[▲ Tornar a l'índex](#índex).
 
 ---
 
@@ -67,6 +70,7 @@ Per desxifrar el missatge, cal utilitzar el mateix **notch**. El procés és l�
 <p align="center">
   <img src="/desencriptarfoto.png" alt="Desxifrant el missatge" width="500"/>
 </p>
+[▲ Tornar a l'índex](#índex).
 
 ---
 
@@ -77,3 +81,43 @@ Per veure el missatge desxifrat, només cal obrir el fitxer `Desxifrat.txt`. Com
 <p align="center">
   <img src="/desencriptartxt.png" alt="Missatge desxifrat" width="500"/>
 </p>
+[▲ Tornar a l'índex](#índex).
+
+---
+
+### 📁 Repositori
+
+├── Arxius/
+    ├── const.h
+    ├── logica.h
+    ├── Desxifrat.txt
+    ├── Rotor1.txt
+    ├── Rotor2.txt
+    ├── Rotor3.txt
+    ├── Xifrat.txt
+    ├── main.cpp
+    ├── rotors.cpp
+    ├── variables.cpp
+    └── operations.cpp
+    
+[▲ Tornar a l'índex](#índex).
+
+---
+
+## 📚 Crèdits <a name="credits"></a>
+
+Pràctica realitzada per:
+
+- Lluc Omella  
+- Andualem
+
+[▲ Tornar a l'índex](#índex).
+
+---
+
+## 🪪 Llicencia <a name="llicencia"></a>
+
+Llicencia GNU-GPL  
+[https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)
+
+[▲ Tornar a l'índex](#índex).
