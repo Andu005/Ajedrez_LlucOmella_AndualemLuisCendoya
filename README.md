@@ -13,6 +13,8 @@
 7. [Crèdits](#credits)
 8. [Llicencia](#llicencia).
 
+### [Com fer servir el còdi?](#tutorial)
+
 ---
 
 ## 🔑 Punts claus del codi <a name="claus"></a>
@@ -108,6 +110,34 @@ Per veure el missatge desxifrat, només cal obrir el fitxer `Desxifrat.txt`. Com
 ```
 [▲ Tornar a l'índex](#índex).
 
+---
+
+## Com fer servir el còdi?<a name="tutorial"></a>
+
+### Rotor 1, rotor 2, rotor 3
+
+```
+Els arxius dels rotors són els arxius que contenen una combinació aleatoria de les vint-i-sis lletres de l'abecedari. El seu ordre es pot modificar a conveniència. Aquests rotors simulen els de la màquina enigma original. 
+```
+
+### Xifrat.txt
+
+```
+Es l'arxiu que, tal i com diu el seu nom conté el missatge *xifrat*: es a dir no podrem extreuren cap informació
+```
+
+### Desxifrat.txt
+
+```
+En aquest arxiu, i per tal de simular la màquina exnigma original, el missatge -ja desencriptat-, es presnta d'una forma concreta:
+
+- Totes les lletres foren majuscules o minuscules, apsen a ser majuscules.
+
+- Els espais son ignorats
+
+- Les lletres o caracters es separen en conjunts de 5.
+
+```
 ---
 
 ## 📚 Crèdits <a name="credits"></a>
