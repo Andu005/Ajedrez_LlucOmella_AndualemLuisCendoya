@@ -121,9 +121,11 @@ Els arxius dels rotors són els arxius que contenen una combinació aleatoria de
 ```
 
 <p align="center">
-  <img src="/rotor.png" alt="" width="500"/>
+  <img src="/rotor.png" alt="Arxiu rotor" width="500"/>
 </p>
-
+<p align="left">
+  <img src="/rotorsreals.png" alt="Rotors reals" width="500"/>
+</p>
 
 ### Xifrat.txt
 
@@ -132,7 +134,7 @@ Es l'arxiu que, tal i com diu el seu nom conté el missatge *xifrat*: es a dir n
 ```
 
 <p align="center">
-  <img src="/xifrat.png" alt="" width="500"/>
+  <img src="/xifrat.png" alt="Arxiu xifrat" width="500"/>
 </p>
 
 ### Desxifrat.txt
@@ -149,7 +151,7 @@ En aquest arxiu, i per tal de simular la màquina exnigma original, el missatge 
 ```
 
 <p align="center">
-  <img src="/desxifrat.png" alt="" width="500"/>
+  <img src="/desxifrat.png" alt="Arxiu desxifrat" width="500"/>
 </p>
 
 ---
