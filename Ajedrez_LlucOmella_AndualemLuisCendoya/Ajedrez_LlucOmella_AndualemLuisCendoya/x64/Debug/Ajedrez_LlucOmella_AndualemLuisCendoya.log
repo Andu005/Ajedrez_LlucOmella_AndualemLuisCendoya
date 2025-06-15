@@ -1,5 +1,0 @@
-﻿  operations.cpp
-C:\Users\socia\source\repos\Ajedrez_LlucOmella_AndualemLuisCendoya\Ajedrez_LlucOmella_AndualemLuisCendoya\operations.cpp(25,17): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\socia\source\repos\Ajedrez_LlucOmella_AndualemLuisCendoya\Ajedrez_LlucOmella_AndualemLuisCendoya\operations.cpp(29,33): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\socia\source\repos\Ajedrez_LlucOmella_AndualemLuisCendoya\Ajedrez_LlucOmella_AndualemLuisCendoya\operations.cpp(33,33): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
-  Ajedrez_LlucOmella_AndualemLuisCendoya.vcxproj -> C:\Users\socia\source\repos\Ajedrez_LlucOmella_AndualemLuisCendoya\x64\Debug\Ajedrez_LlucOmella_AndualemLuisCendoya.exe
