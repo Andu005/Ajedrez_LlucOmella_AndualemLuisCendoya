@@ -123,8 +123,8 @@ Els arxius dels rotors són els arxius que contenen una combinació aleatoria de
 <p align="center">
   <img src="/rotor.png" alt="Arxiu rotor" width="500"/>
 </p>
-<p align="left">
-  <img src="/rotorsreals.png" alt="Rotors reals" width="500"/>
+<p align="center">
+  <img src="/rotorsreals.png" alt="Rotors reals" width="250"/>
 </p>
 
 ### Xifrat.txt
