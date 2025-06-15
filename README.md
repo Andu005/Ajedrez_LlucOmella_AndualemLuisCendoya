@@ -24,6 +24,7 @@ Parlant de **notch**, és la **clau inicial**, composta per 3 lletres. El progra
 <p align="center">
   <img src="/ilustracioexplicativa.png" alt="Il·lustració explicativa" width="500"/>
 </p>
+
 [▲ Tornar a l'índex](#índex).
 
 ---
@@ -37,6 +38,7 @@ El menú del programa és aquest i ofereix diverses opcions:
 <p align="center">
   <img src="/menucodi.png" alt="Menú del programa" width="500"/>
 </p>
+
 [▲ Tornar a l'índex](#índex).
 
 ---
@@ -59,6 +61,7 @@ El programa anirà saltant lletres fins a trobar la indicada. Quan els tres roto
 <p align="center">
   <img src="/rotorilustracio.png" alt="Exemple de rotor" width="400"/>
 </p>
+
 [▲ Tornar a l'índex](#índex).
 
 ---
@@ -70,6 +73,7 @@ Per desxifrar el missatge, cal utilitzar el mateix **notch**. El procés és l�
 <p align="center">
   <img src="/desencriptarfoto.png" alt="Desxifrant el missatge" width="500"/>
 </p>
+
 [▲ Tornar a l'índex](#índex).
 
 ---
@@ -81,6 +85,7 @@ Per veure el missatge desxifrat, només cal obrir el fitxer `Desxifrat.txt`. Com
 <p align="center">
   <img src="/desencriptartxt.png" alt="Missatge desxifrat" width="500"/>
 </p>
+
 [▲ Tornar a l'índex](#índex).
 
 ---
