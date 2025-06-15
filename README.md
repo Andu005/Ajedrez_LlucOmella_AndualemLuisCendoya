@@ -1,4 +1,4 @@
-# ♟️ Ajedrez_LlucOmella_AndualemLuisCendoya
+# 🔑 Encriptador_LlucOmella_AndualemLuisCendoya
 
 ## 🔑 Punts claus del codi
 
