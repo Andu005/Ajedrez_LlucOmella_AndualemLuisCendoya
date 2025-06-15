@@ -92,6 +92,7 @@ Per veure el missatge desxifrat, només cal obrir el fitxer `Desxifrat.txt`. Com
 
 ### 📁 Repositori <a name="repositori"></a>
 
+```text
 ├── Arxius/
     ├── const.h
     ├── logica.h
@@ -104,7 +105,7 @@ Per veure el missatge desxifrat, només cal obrir el fitxer `Desxifrat.txt`. Com
     ├── rotors.cpp
     ├── variables.cpp
     └── operations.cpp
-    
+```
 [▲ Tornar a l'índex](#índex).
 
 ---
