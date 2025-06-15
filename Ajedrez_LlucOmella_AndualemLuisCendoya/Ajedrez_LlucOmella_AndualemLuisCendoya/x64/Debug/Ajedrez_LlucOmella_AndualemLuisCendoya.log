@@ -1,0 +1,10 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: El directorio intermedio (x64\Debug\) contiene archivos compartidos de otro proyecto (Ajedrez_LlucOmella_AndualemLuisCendoya.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
+  main.cpp
+  operations.cpp
+C:\Users\socia\source\repos\Ajedrez_LlucOmella_AndualemLuisCendoya\Ajedrez_LlucOmella_AndualemLuisCendoya\operations.cpp(26,17): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\socia\source\repos\Ajedrez_LlucOmella_AndualemLuisCendoya\Ajedrez_LlucOmella_AndualemLuisCendoya\operations.cpp(30,33): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\socia\source\repos\Ajedrez_LlucOmella_AndualemLuisCendoya\Ajedrez_LlucOmella_AndualemLuisCendoya\operations.cpp(34,33): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  rotors.cpp
+  variables.cpp
+  Generando código...
+  Ajedrez_LlucOmella_AndualemLuisCendoya.vcxproj -> C:\Users\socia\source\repos\Ajedrez_LlucOmella_AndualemLuisCendoya\x64\Debug\Encriptador_LlucOmella_AndualemLuisCendoya.exe
